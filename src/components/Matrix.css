@@ -1,0 +1,16 @@
+.matrix {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    height: calc(100vh - 150px);
+    min-height: 600px;
+  }
+  
+  @media (max-width: 768px) {
+    .matrix {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+      height: auto;
+    }
+  }
